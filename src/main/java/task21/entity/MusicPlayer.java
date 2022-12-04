@@ -1,10 +1,14 @@
 package task21.entity;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class MusicPlayer {
 
     private Music music;
 
-    public MusicPlayer(Music music) {
+    public MusicPlayer(@Qualifier("classicalMusic") Music music) {
         this.music = music;
     }
 

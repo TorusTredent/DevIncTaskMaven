@@ -8,12 +8,4 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
     <context:annotation-config/>
     <context:component-scan base-package="task21"/>
-
-    <bean id="musicBean"
-          class="task21.entity.ClassicalMusic">
-    </bean>
-    <bean id="MusicPlayer"
-          class="task21.entity.MusicPlayer">
-        <property name="music" ref="musicBean"/>
-    </bean>
 </beans>
